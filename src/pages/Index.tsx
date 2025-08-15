@@ -86,7 +86,7 @@ const Index = () => {
             <div className="flex items-center justify-center gap-8 bg-gray-50 rounded-2xl p-8 border border-gray-200">
               <div className="text-center">
                 <img 
-                  src="/cardekho-logo-png_seeklogo-410133.webp" 
+                  src="cardekho-logo-png_seeklogo-410133.webp" 
                   alt="Cardekho" 
                   className="w-16 h-16 object-contain mb-3"
                 />
@@ -95,7 +95,7 @@ const Index = () => {
               
               <div className="text-center">
                 <img 
-                  src="/blinkit-logo.png" 
+                  src="blinkit-logo.png" 
                   alt="Blinkit" 
                   className="w-16 h-16 object-contain mb-3"
                 />
@@ -104,7 +104,7 @@ const Index = () => {
               
               <div className="text-center">
                 <img 
-                  src="/Logo_flip.webp" 
+                  src="Logo_flip.webp" 
                   alt="Flip Indonesia" 
                   className="w-16 h-16 object-contain mb-3"
                 />
@@ -113,7 +113,7 @@ const Index = () => {
               
               <div className="text-center">
                 <img 
-                  src="/unacademy-logo-png_seeklogo-400820.webp" 
+                  src="unacademy-logo-png_seeklogo-400820.webp" 
                   alt="Unacademy" 
                   className="w-16 h-16 object-contain mb-3"
                 />
@@ -134,7 +134,7 @@ const Index = () => {
                 <div className="w-80 h-80 mx-auto bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full flex items-center justify-center">
                   <div className="w-64 h-64 bg-primary/10 rounded-full flex items-center justify-center overflow-hidden">
                     <img 
-                      src="/profile pic.jpeg" 
+                      src="profile-pic.jpeg" 
                       alt="Kirti Gupta" 
                       className="w-full h-full object-cover rounded-full"
                     />
