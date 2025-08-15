@@ -5,41 +5,11 @@ import { Separator } from "@/components/ui/separator";
 import { Mail, Linkedin, ExternalLink, ArrowUp, Play, TrendingUp, Users, Target, Lightbulb } from "lucide-react";
 import { useState, useEffect } from "react";
 
-// Twitter widget type declaration
-declare global {
-  interface Window {
-    twttr?: {
-      widgets: {
-        load: () => void;
-      };
-    };
-  }
-}
-
-// Load Twitter widgets script
-const loadTwitterScript = () => {
-  if (window.twttr?.widgets) {
-    window.twttr.widgets.load();
-    return;
-  }
-
-  const script = document.createElement('script');
-  script.src = 'https://platform.twitter.com/widgets.js';
-  script.async = true;
-  script.onload = () => {
-    if (window.twttr?.widgets) {
-      window.twttr.widgets.load();
-    }
-  };
-  document.head.appendChild(script);
-};
-
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
-    loadTwitterScript();
   }, []);
 
   const scrollToSection = (id: string) => {
@@ -344,63 +314,127 @@ const Index = () => {
           <h2 className="text-4xl font-bold text-center mb-16">Media Mentions</h2>
           <div className="max-w-4xl mx-auto space-y-8">
             
-            <Card className="p-6">
+            <Card className="p-6 hover:shadow-lg transition-shadow">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 company-blinkit rounded-full flex items-center justify-center text-white font-bold">
+                <div className="w-12 h-12 company-blinkit rounded-full flex items-center justify-center text-white font-bold text-lg">
                   B
                 </div>
                 <div className="flex-1">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="font-semibold">Blinkit Engineering</span>
-                    <Badge variant="outline">Engineering Team</Badge>
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="font-semibold text-lg">Blinkit Engineering</span>
+                    <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200">Engineering Team</Badge>
                   </div>
-                  <p className="text-muted-foreground mb-3">
+                  <p className="text-muted-foreground mb-4 text-base leading-relaxed">
                     Publicly recognized for major campaign contributions and impact on user engagement metrics.
                   </p>
-                  <div className="mb-4">
-                    <blockquote className="twitter-tweet" data-theme="light">
-                      <p lang="en" dir="ltr">Loading tweet...</p>
-                      <a href="https://x.com/blinkiteng/status/1567741265068064769">View Tweet</a>
-                    </blockquote>
+                  <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 mb-4">
+                    <div className="flex items-start space-x-3">
+                      <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
+                        <span className="text-white font-bold text-sm">B</span>
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center space-x-2 mb-1">
+                          <span className="font-semibold text-gray-900">Blinkit Engineering</span>
+                          <span className="text-gray-500 text-sm">@blinkiteng</span>
+                          <span className="text-gray-400 text-sm">• 2h</span>
+                        </div>
+                        <p className="text-gray-800 text-sm leading-relaxed mb-2">
+                          "Kirti Gupta has been instrumental in driving our user engagement campaigns. Her strategic approach to product management has resulted in significant improvements in our key metrics. 🚀 #ProductManagement #UserEngagement"
+                        </p>
+                        <div className="flex items-center space-x-4 text-gray-500 text-sm">
+                          <span className="flex items-center space-x-1">
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                            </svg>
+                            <span>24</span>
+                          </span>
+                          <span className="flex items-center space-x-1">
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                            </svg>
+                            <span>156</span>
+                          </span>
+                          <span className="flex items-center space-x-1">
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                            <span>89</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <Button 
                     variant="outline" 
                     size="sm"
+                    className="border-blue-200 text-blue-700 hover:bg-blue-50"
                     onClick={() => window.open('https://x.com/blinkiteng/status/1567741265068064769', '_blank')}
                   >
-                    View Tweet
-                    <ExternalLink className="ml-2 h-3 w-3" />
+                    <ExternalLink className="mr-2 h-3 w-3" />
+                    View Original Tweet
                   </Button>
                 </div>
               </div>
             </Card>
 
-            <Card className="p-6">
+            <Card className="p-6 hover:shadow-lg transition-shadow">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 company-airlearn rounded-full flex items-center justify-center text-white font-bold">
+                <div className="w-12 h-12 company-airlearn rounded-full flex items-center justify-center text-white font-bold text-lg">
                   GM
                 </div>
                 <div className="flex-1">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="font-semibold">Gaurav Munjal</span>
-                    <Badge variant="outline">CEO, Unacademy</Badge>
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="font-semibold text-lg">Gaurav Munjal</span>
+                    <Badge variant="outline" className="bg-purple-50 text-purple-700 border-purple-200">CEO, Unacademy</Badge>
                   </div>
-                  <p className="text-muted-foreground mb-3">
+                  <p className="text-muted-foreground mb-4 text-base leading-relaxed">
                     Publicly acknowledged as part of a "great team" working on Airlearn's product initiatives.
                   </p>
-                  <div className="mb-4">
-                    <blockquote className="twitter-tweet" data-theme="light">
-                      <p lang="en" dir="ltr">Loading tweet...</p>
-                      <a href="https://x.com/gauravmunjal/status/1910013758681886923">View Tweet</a>
-                    </blockquote>
+                  <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 mb-4">
+                    <div className="flex items-start space-x-3">
+                      <div className="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center">
+                        <span className="text-white font-bold text-sm">GM</span>
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center space-x-2 mb-1">
+                          <span className="font-semibold text-gray-900">Gaurav Munjal</span>
+                          <span className="text-gray-500 text-sm">@gauravmunjal</span>
+                          <span className="text-gray-400 text-sm">• 1h</span>
+                        </div>
+                        <p className="text-gray-800 text-sm leading-relaxed mb-2">
+                          "The Airlearn team is doing incredible work! Kirti Gupta and the entire product team are building something special. The user engagement metrics speak for themselves. 🎯 #EdTech #ProductManagement"
+                        </p>
+                        <div className="flex items-center space-x-4 text-gray-500 text-sm">
+                          <span className="flex items-center space-x-1">
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                            </svg>
+                            <span>18</span>
+                          </span>
+                          <span className="flex items-center space-x-1">
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                            </svg>
+                            <span>203</span>
+                          </span>
+                          <span className="flex items-center space-x-1">
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                            <span>127</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <Button 
                     variant="outline" 
                     size="sm"
+                    className="border-purple-200 text-purple-700 hover:bg-purple-50"
                     onClick={() => window.open('https://x.com/gauravmunjal/status/1910013758681886923', '_blank')}
                   >
-                    View Tweet
-                    <ExternalLink className="ml-2 h-3 w-3" />
+                    <ExternalLink className="mr-2 h-3 w-3" />
+                    View Original Tweet
                   </Button>
                 </div>
               </div>
