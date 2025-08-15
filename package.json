@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "build:dev": "vite build --mode development",
-    "build:gh-pages": "vite build --base=/kirti-gupta-folio-main/",
+    "build:gh-pages": "vite build --base=/kirti-gupta-folio/",
     "lint": "eslint .",
     "preview": "vite preview"
   },

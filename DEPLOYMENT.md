@@ -5,7 +5,7 @@ This project is configured to automatically deploy to GitHub Pages using GitHub 
 ## Prerequisites
 
 1. **Repository Setup**: Make sure your repository is pushed to GitHub
-2. **Repository Name**: The project is configured for repository name `kirti-gupta-folio-main`
+2. **Repository Name**: The project is configured for repository name `kirti-gupta-folio`
 3. **Branch**: The workflow runs on the `main` branch
 
 ## Automatic Deployment
@@ -43,7 +43,7 @@ If you want to deploy manually:
 
 2. **Wait for Deployment**:
    - Check the Actions tab to see deployment progress
-   - Your site will be available at: `https://<username>.github.io/kirti-gupta-folio-main/`
+   - Your site will be available at: `https://<username>.github.io/kirti-gupta-folio/`
 
 ## Troubleshooting
 
