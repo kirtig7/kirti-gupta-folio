@@ -36,7 +36,7 @@ const Index = () => {
           </div>
         </div>
       </nav>
-
+      <div className="h-10" /> {/* Adjust height as needed */}
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         {/* Top Image Section - "Crafting Products That Win" */}
@@ -59,8 +59,8 @@ const Index = () => {
               "Designing product experiences that scale delight and drive growth."
             </p>
             <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto leading-relaxed text-gray-600">
-              6.5+ years building high-impact features across ed-tech, fintech, quick-commerce, and auto-tech domains, 
-              turning ideas into experiences that users love and businesses thrive on.
+              6+ years building high-impact features across ed-tech, fintech, quick-commerce, and auto-tech domains, 
+              turning ideas into experiences that users love and        businesses thrive on.
             </p>
             
             {/* Action Buttons */}
@@ -248,11 +248,11 @@ const Index = () => {
             <Card className="overflow-hidden">
               <CardHeader className="company-airlearn">
                 <div className="flex items-center gap-2 mb-2">
-                  <Badge variant="secondary" className="bg-white/20 text-white border-white/30">Airlearn</Badge>
-                  <Badge variant="outline" className="border-white/30 text-white">Social Gamification</Badge>
+                  <Badge variant="secondary" className="bg-white/20 border-white/30">Airlearn</Badge>
+                  <Badge variant="outline" className="border-white/30">Social Gamification</Badge>
                 </div>
-                <CardTitle className="text-2xl text-white">Buddy Streak – Social Gamification</CardTitle>
-                <CardDescription className="text-lg text-white/90">
+                <CardTitle className="text-2xl">Buddy Streak – Social Gamification</CardTitle>
+                <CardDescription className="text-lg">
                   Launched a feature to help learners stay accountable through friend-based streaks
                 </CardDescription>
               </CardHeader>
@@ -277,11 +277,11 @@ const Index = () => {
             <Card className="overflow-hidden">
               <CardHeader className="company-airlearn">
                 <div className="flex items-center gap-2 mb-2">
-                  <Badge variant="secondary" className="bg-white/20 text-white border-white/30">Airlearn</Badge>
-                  <Badge variant="outline" className="border-white/30 text-white">AI/ML</Badge>
+                  <Badge variant="secondary" className="bg-white/20 border-white/30">Airlearn</Badge>
+                  <Badge variant="outline" className="border-white/30">AI/ML</Badge>
                 </div>
-                <CardTitle className="text-2xl text-white">Personalized Notifications</CardTitle>
-                <CardDescription className="text-lg text-white/90">
+                <CardTitle className="text-2xl">Personalized Notifications</CardTitle>
+                <CardDescription className="text-lg">
                   Introduced AI-powered notification strategy for optimal user engagement
                 </CardDescription>
               </CardHeader>
@@ -306,11 +306,11 @@ const Index = () => {
             <Card className="overflow-hidden">
               <CardHeader className="company-blinkit">
                 <div className="flex items-center gap-2 mb-2">
-                  <Badge variant="secondary" className="bg-white/20 text-white border-white/30">Blinkit</Badge>
-                  <Badge variant="outline" className="border-white/30 text-white">Subscription Growth</Badge>
+                  <Badge variant="secondary" className="bg-blue/20 border-white/30">Blinkit</Badge>
+                  <Badge variant="outline" className="border-white/30">Subscription Growth</Badge>
                 </div>
-                <CardTitle className="text-2xl text-white">Smart Bachat Club</CardTitle>
-                <CardDescription className="text-lg text-white/90">
+                <CardTitle className="text-2xl">Smart Bachat Club</CardTitle>
+                <CardDescription className="text-lg">
                   Contributed to the growth of Grofers' subscription product
                 </CardDescription>
               </CardHeader>
@@ -335,11 +335,11 @@ const Index = () => {
             <Card className="overflow-hidden">
               <CardHeader className="company-flip">
                 <div className="flex items-center gap-2 mb-2">
-                  <Badge variant="secondary" className="bg-white/20 text-white border-white/30">Flip.id</Badge>
-                  <Badge variant="outline" className="border-white/30 text-white">User Onboarding</Badge>
+                  <Badge variant="secondary" className="bg-white/20 border-white/30">Flip.id</Badge>
+                  <Badge variant="outline" className="border-white/30">User Onboarding</Badge>
                 </div>
-                <CardTitle className="text-2xl text-white">Authentication Revamp</CardTitle>
-                <CardDescription className="text-lg text-white/90">
+                <CardTitle className="text-2xl">Authentication Revamp</CardTitle>
+                <CardDescription className="text-lg">
                   Led new registration flow optimization for better user acquisition
                 </CardDescription>
               </CardHeader>
