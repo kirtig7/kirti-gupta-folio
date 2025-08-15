@@ -681,10 +681,11 @@ const Index = () => {
                           <span className="text-gray-400 text-sm">• 1h</span>
                         </div>
                         <p className="text-gray-800 text-sm leading-relaxed mb-2">
-                          "The Airlearn team is doing incredible work! Kirti
-                          Gupta and the entire product team are building
-                          something special. The user engagement metrics speak
-                          for themselves. 🎯 #EdTech #ProductManagement"
+                          "Over 70k Learners are now using Airlearn daily. Top Countries are US, UK and Germany. MAUs are almost 300k now.
+                         🎯 #EdTech #ProductManagement"
+                         This is all possible because of a great team. Thank you 
+                            @Sushilk91, @shankmurali, @Vipink305 , @AshokThariyan , @Kirti_NotKriti
+                            and the entire team for making this happen ❤️❤️❤️
                         </p>
                         <div className="flex items-center space-x-4 text-gray-500 text-sm">
                           <span className="flex items-center space-x-1">
