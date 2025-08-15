@@ -884,7 +884,7 @@ const Index = () => {
                       variant="outline"
                       className="bg-green-50 text-green-700 border-green-200"
                     >
-                      Solving Product Challenges @ Capri Global
+                       Product Manager @ Capri Global
                     </Badge>
                   </div>
                   <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 mb-4">
