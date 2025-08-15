@@ -112,27 +112,24 @@ const Index = () => {
 
               {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row justify-center gap-4 mb-16">
-                <Button
+                {/* <Button
                   size="lg"
                   onClick={() => scrollToSection("contact")}
                   className="text-lg px-8"
                 >
                   Let's Talk
-                </Button>
+                </Button> */}
                 <Button
-                  variant="outline"
-                  size="lg"
-                  className="text-lg px-8"
-                  onClick={() =>
-                    window.open(
-                      "https://substack.com/@kirtigupta487339",
-                      "_blank"
-                    )
-                  }
-                >
-                  Subscribe to Substack
-                  <ExternalLink className="ml-2 h-4 w-4" />
-                </Button>
+              variant="outline"
+              size="lg"
+              className="text-lg px-8"
+              onClick={() =>
+                window.open("https://linkedin.com/in/kirtig", "_blank")
+              }
+            >
+              <Linkedin className="mr-2 h-5 w-5" />
+              LinkedIn
+            </Button>
                 <Button
                   variant="secondary"
                   size="lg"
@@ -532,7 +529,8 @@ const Index = () => {
           <h2 className="text-4xl font-bold text-center mb-16">
             Media Mentions
           </h2>
-          <div className="max-w-4xl mx-auto space-y-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
             <Card className="p-6 hover:shadow-lg transition-shadow">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 company-blinkit rounded-full flex items-center justify-center text-white font-bold text-lg">
@@ -986,6 +984,7 @@ const Index = () => {
                 </div>
               </div>
             </Card>
+            </div>
           </div>
         </div>
       </section>
@@ -1139,25 +1138,7 @@ const Index = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button
-              size="lg"
-              className="text-lg px-8"
-              onClick={() => window.open("mailto:kirti@example.com", "_blank")}
-            >
-              <Mail className="mr-2 h-5 w-5" />
-              Email Me
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="text-lg px-8"
-              onClick={() =>
-                window.open("https://linkedin.com/in/kirtig", "_blank")
-              }
-            >
-              <Linkedin className="mr-2 h-5 w-5" />
-              LinkedIn
-            </Button>
+
             <Button
               variant="secondary"
               size="lg"
