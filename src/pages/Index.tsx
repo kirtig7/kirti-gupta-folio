@@ -507,7 +507,7 @@ const Index = () => {
                   <CardHeader>
                     <CardTitle className="text-lg flex items-center gap-2">
                       <Play className="h-4 w-4" />
-                      Product Strategy in Fast-Growing Startups
+                      Product Management in Fast-Growing Startups
                     </CardTitle>
                     <CardDescription>Episode #12 • 45 min</CardDescription>
                   </CardHeader>
@@ -516,8 +516,8 @@ const Index = () => {
                       <iframe 
                         width="100%" 
                         height="200" 
-                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-                        title="Product Strategy in Fast-Growing Startups"
+                        src="https://www.youtube.com/embed/gp3Yi2MpN8o" 
+                        title="Product Management in Fast-Growing Startups"
                         frameBorder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                         allowFullScreen
@@ -527,7 +527,7 @@ const Index = () => {
                     <Button 
                       variant="outline" 
                       size="sm"
-                      onClick={() => window.open('https://youtube.com/@kirtig', '_blank')}
+                      onClick={() => window.open('https://www.youtube.com/watch?app=desktop&v=gp3Yi2MpN8o&t=0s', '_blank')}
                     >
                       <Play className="mr-2 h-3 w-3" />
                       Listen
@@ -535,38 +535,7 @@ const Index = () => {
                   </CardContent>
                 </Card>
                 
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="text-lg flex items-center gap-2">
-                      <Play className="h-4 w-4" />
-                      From Idea to Impact: Product Management Lessons
-                    </CardTitle>
-                    <CardDescription>Episode #8 • 38 min</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="mb-4">
-                      <iframe 
-                        width="100%" 
-                        height="200" 
-                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-                        title="From Idea to Impact: Product Management Lessons"
-                        frameBorder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowFullScreen
-                        className="rounded-lg"
-                      ></iframe>
-                    </div>
-                    <Button 
-                      variant="outline" 
-                      size="sm"
-                      onClick={() => window.open('https://youtube.com/@kirtig', '_blank')}
-                    >
-                      <Play className="mr-2 h-3 w-3" />
-                      Listen
-                    </Button>
-                  </CardContent>
-                </Card>
-                
+      
                 <Button 
                   className="w-full"
                   onClick={() => window.open('https://youtube.com/@kirtig', '_blank')}
