@@ -38,36 +38,88 @@ const Index = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/10"></div>
-        <div className={`container mx-auto px-4 text-center z-10 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-            Kirti Gupta
-          </h1>
-          <h2 className="text-2xl md:text-3xl text-muted-foreground mb-4">Senior Product Manager</h2>
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
-            "Designing product experiences that scale delight and drive growth."
-          </p>
-          <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
-            6.5+ years building high-impact features across ed-tech, fintech, quick-commerce, and auto-tech domains, 
-            turning ideas into experiences that users love and businesses thrive on.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" onClick={() => scrollToSection('contact')} className="text-lg px-8">
-              Let's Talk
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="text-lg px-8"
-              onClick={() => window.open('https://substack.com/@kirtig', '_blank')}
-            >
-              Subscribe to Substack
-              <ExternalLink className="ml-2 h-4 w-4" />
-            </Button>
-            <Button variant="secondary" size="lg" onClick={() => scrollToSection('projects')} className="text-lg px-8">
-              Explore My Work
-            </Button>
+      <section className="relative overflow-hidden">
+        {/* Top Image Section - "Crafting Products That Win" */}
+        <div
+          className="relative w-full h-[40vh] bg-cover bg-center bg-no-repeat flex items-center justify-center"
+          style={{ backgroundImage: 'url("./Crafting Products That Win.png")' }}
+        >
+          {/* Optional overlay if text on image needs more contrast */}
+          {/* <div className="absolute inset-0 bg-black opacity-30"></div> */}
+        </div>
+
+        {/* Content Section Below Image */}
+        <div className="relative z-10 text-center py-16 px-4 bg-white">
+          <div className="max-w-4xl mx-auto">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-primary">
+              Kirti Gupta
+            </h1>
+            <h2 className="text-2xl md:text-3xl text-muted-foreground mb-6">Senior Product Manager</h2>
+            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed text-gray-700">
+              "Designing product experiences that scale delight and drive growth."
+            </p>
+            <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto leading-relaxed text-gray-600">
+              6.5+ years building high-impact features across ed-tech, fintech, quick-commerce, and auto-tech domains, 
+              turning ideas into experiences that users love and businesses thrive on.
+            </p>
+            
+            {/* Action Buttons */}
+            <div className="flex flex-col sm:flex-row justify-center gap-4 mb-16">
+              <Button size="lg" onClick={() => scrollToSection('contact')} className="text-lg px-8">
+                Let's Talk
+              </Button>
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="text-lg px-8"
+                onClick={() => window.open('https://substack.com/@kirtigupta487339', '_blank')}
+              >
+                Subscribe to Substack
+                <ExternalLink className="ml-2 h-4 w-4" />
+              </Button>
+              <Button variant="secondary" size="lg" onClick={() => scrollToSection('projects')} className="text-lg px-8">
+                Explore My Work
+              </Button>
+            </div>
+
+            {/* Brand Logos - Below the name and content */}
+            <div className="flex items-center justify-center gap-8 bg-gray-50 rounded-2xl p-8 border border-gray-200">
+              <div className="text-center">
+                <img 
+                  src="/cardekho-logo-png_seeklogo-410133.webp" 
+                  alt="Cardekho" 
+                  className="w-16 h-16 object-contain mb-3"
+                />
+                <span className="text-sm font-medium text-gray-700">Cardekho</span>
+              </div>
+              
+              <div className="text-center">
+                <img 
+                  src="/blinkit-logo.png" 
+                  alt="Blinkit" 
+                  className="w-16 h-16 object-contain mb-3"
+                />
+                <span className="text-sm font-medium text-gray-700">Blinkit</span>
+              </div>
+              
+              <div className="text-center">
+                <img 
+                  src="/Logo_flip.webp" 
+                  alt="Flip Indonesia" 
+                  className="w-16 h-16 object-contain mb-3"
+                />
+                <span className="text-sm font-medium text-gray-700">Flip</span>
+              </div>
+              
+              <div className="text-center">
+                <img 
+                  src="/unacademy-logo-png_seeklogo-400820.webp" 
+                  alt="Unacademy" 
+                  className="w-16 h-16 object-contain mb-3"
+                />
+                <span className="text-sm font-medium text-gray-700">Unacademy</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -79,9 +131,13 @@ const Index = () => {
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <div className="w-64 h-64 mx-auto bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full flex items-center justify-center">
-                  <div className="w-48 h-48 bg-primary/10 rounded-full flex items-center justify-center">
-                    <span className="text-6xl font-bold text-primary">KG</span>
+                <div className="w-80 h-80 mx-auto bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full flex items-center justify-center">
+                  <div className="w-64 h-64 bg-primary/10 rounded-full flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="/profile pic.jpeg" 
+                      alt="Kirti Gupta" 
+                      className="w-full h-full object-cover rounded-full"
+                    />
                   </div>
                 </div>
               </div>
@@ -324,9 +380,6 @@ const Index = () => {
                     <span className="font-semibold text-lg">Blinkit Engineering</span>
                     <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200">Engineering Team</Badge>
                   </div>
-                  <p className="text-muted-foreground mb-4 text-base leading-relaxed">
-                    Publicly recognized for major campaign contributions and impact on user engagement metrics.
-                  </p>
                   <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 mb-4">
                     <div className="flex items-start space-x-3">
                       <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
@@ -387,9 +440,6 @@ const Index = () => {
                     <span className="font-semibold text-lg">Gaurav Munjal</span>
                     <Badge variant="outline" className="bg-purple-50 text-purple-700 border-purple-200">CEO, Unacademy</Badge>
                   </div>
-                  <p className="text-muted-foreground mb-4 text-base leading-relaxed">
-                    Publicly acknowledged as part of a "great team" working on Airlearn's product initiatives.
-                  </p>
                   <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 mb-4">
                     <div className="flex items-start space-x-3">
                       <div className="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center">
@@ -439,6 +489,126 @@ const Index = () => {
                 </div>
               </div>
             </Card>
+
+            <Card className="p-6 hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                  GM
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="font-semibold text-lg">Gagan Mahajan</span>
+                    <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200">Director - Product @ Meesho</Badge>
+                  </div>
+                  <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 mb-4">
+                    <div className="flex items-start space-x-3">
+                      <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
+                        <span className="text-white font-bold text-sm">GM</span>
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center space-x-2 mb-1">
+                          <span className="font-semibold text-gray-900">Gagan Mahajan</span>
+                          <span className="text-gray-500 text-sm">@gaganmahajan</span>
+                          <span className="text-gray-400 text-sm">• Sep 20, 2020</span>
+                        </div>
+                        <p className="text-gray-800 text-sm leading-relaxed mb-2">
+                          "Kirti learns at godspeed. Ever since she joined Grofers, her own growth curve has been nothing short of a hockey stick. Her curiosity and hardwork make her stand out. She is a team player and she optimises for customer value, traits that would strengthen any product team. Rooting for Kirti to have an awesome career ahead."
+                        </p>
+                        <div className="flex items-center space-x-4 text-gray-500 text-sm">
+                          <span className="flex items-center space-x-1">
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                            </svg>
+                            <span>42</span>
+                          </span>
+                          <span className="flex items-center space-x-1">
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                            </svg>
+                            <span>128</span>
+                          </span>
+                          <span className="flex items-center space-x-1">
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                            <span>89</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <Button 
+                    variant="outline" 
+                    size="sm"
+                    className="border-blue-200 text-blue-700 hover:bg-blue-50"
+                    onClick={() => window.open('https://linkedin.com/in/gagan-mahajan', '_blank')}
+                  >
+                    <ExternalLink className="mr-2 h-3 w-3" />
+                    View LinkedIn Profile
+                  </Button>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-6 hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                  AC
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="font-semibold text-lg">Akshul Chauhan</span>
+                    <Badge variant="outline" className="bg-green-50 text-green-700 border-green-200">Solving Product Challenges @ Capri Global</Badge>
+                  </div>
+                  <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 mb-4">
+                    <div className="flex items-start space-x-3">
+                      <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
+                        <span className="text-white font-bold text-sm">AC</span>
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center space-x-2 mb-1">
+                          <span className="font-semibold text-gray-900">Akshul Chauhan</span>
+                          <span className="text-gray-500 text-sm">@akshulchauhan</span>
+                          <span className="text-gray-400 text-sm">• Jun 18, 2019</span>
+                        </div>
+                        <p className="text-gray-800 text-sm leading-relaxed mb-2">
+                          "Kirti understands the critical importance of maintaining a strong product offering, as well as the need to constantly grow revenue. Her ability to sustain existing product lines while opening up new opportunities helped the company a lot. Her knowledge of how to utilize the analytical skills to her advantage has also become one of the tools she uses to find success on a regular basis. Kirti is extremely versatile and, from my personal experience, extremely driven as well."
+                        </p>
+                        <div className="flex items-center space-x-4 text-gray-500 text-sm">
+                          <span className="flex items-center space-x-1">
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                            </svg>
+                            <span>38</span>
+                          </span>
+                          <span className="flex items-center space-x-1">
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                            </svg>
+                            <span>95</span>
+                          </span>
+                          <span className="flex items-center space-x-1">
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                            <span>67</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <Button 
+                    variant="outline" 
+                    size="sm"
+                    className="border-green-200 text-green-700 hover:bg-green-50"
+                    onClick={() => window.open('https://linkedin.com/in/akshul-chauhan', '_blank')}
+                  >
+                    <ExternalLink className="mr-2 h-3 w-3" />
+                    View LinkedIn Profile
+                  </Button>
+                </div>
+              </div>
+            </Card>
           </div>
         </div>
       </section>
@@ -464,7 +634,7 @@ const Index = () => {
                     <Button 
                       variant="outline" 
                       size="sm"
-                      onClick={() => window.open('https://substack.com/@kirtig', '_blank')}
+                      onClick={() => window.open('https://substack.com/@kirtigupta487339', '_blank')}
                     >
                       Read More
                     </Button>
@@ -480,7 +650,7 @@ const Index = () => {
                     <Button 
                       variant="outline" 
                       size="sm"
-                      onClick={() => window.open('https://substack.com/@kirtig', '_blank')}
+                      onClick={() => window.open('https://substack.com/@kirtigupta487339', '_blank')}
                     >
                       Read More
                     </Button>
@@ -489,7 +659,7 @@ const Index = () => {
                 
                 <Button 
                   className="w-full"
-                  onClick={() => window.open('https://substack.com/@kirtig', '_blank')}
+                  onClick={() => window.open('https://substack.com/@kirtigupta487339', '_blank')}
                 >
                   View All Articles
                   <ExternalLink className="ml-2 h-4 w-4" />
@@ -580,7 +750,7 @@ const Index = () => {
               variant="secondary" 
               size="lg" 
               className="text-lg px-8"
-              onClick={() => window.open('https://substack.com/@kirtig', '_blank')}
+              onClick={() => window.open('https://substack.com/@kirtigupta487339', '_blank')}
             >
               Subscribe to Newsletter
               <ExternalLink className="ml-2 h-4 w-4" />
