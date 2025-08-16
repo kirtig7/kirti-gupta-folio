@@ -85,7 +85,7 @@ const Index = () => {
         </div>
 
         {/* Content Section Below Image */}
-        <div className="relative z-10 text-center py-16 px-4 bg-white">
+        <div className="relative z-10 text-center py-16 px-4 bg-gradient-to-r from-purple-100 via-white to-pink-100 animate-gradient-x backdrop-blur-[20px]">
           {/* Add a Blur Overlay here */}
           <div className="absolute inset-0 backdrop-blur-[20px] bg-white/10"></div>
 
@@ -141,7 +141,7 @@ const Index = () => {
               </div>
 
               {/* Brand Logos - Below the name and content */}
-              <div className="flex items-center justify-center gap-8 bg-gray-50 rounded-2xl p-8 border border-gray-200">
+              <div className="flex items-center justify-center gap-8 bg-muted/30 rounded-2xl p-6 border border-gray-200">
                 <div className="text-center">
                   <img
                     src="cardekho-logo-png_seeklogo-410133.webp"
@@ -989,7 +989,7 @@ const Index = () => {
         </div>
       </section>
       {/* Writing & Podcast */}
-      <section className="py-20 bg-muted/30">
+      <section id="Writing" className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-16">
             Writing & Podcast
@@ -1114,7 +1114,7 @@ const Index = () => {
                 <Button
                   className="w-full"
                   onClick={() =>
-                    window.open("https://youtube.com/@kirtig", "_blank")
+                    window.open("https://www.youtube.com/watch?app=desktop&v=gp3Yi2MpN8o&t=0s", "_blank")
                   }
                 >
                   View All Episodes
