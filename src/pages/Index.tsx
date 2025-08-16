@@ -18,6 +18,30 @@ import {
   Users,
   Target,
   Lightbulb,
+  BarChart3,
+  Activity,
+  PieChart,
+  Map,
+  Route,
+  Calendar,
+  Users2,
+  TestTube,
+  Gamepad2,
+  Share2,
+  TrendingDown,
+  FileText,
+  Palette,
+  Users3,
+  MessageSquare,
+  Settings,
+  Database,
+  Filter,
+  Gauge,
+  Figma,
+  PenTool,
+  Users4,
+  FileCheck,
+  MessageCircle,
 } from "lucide-react";
 import { useState, useEffect } from "react";
 
@@ -252,10 +276,22 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li>• End-to-end product lifecycle ownership</li>
-                  <li>• User journey mapping & optimization</li>
-                  <li>• Feature prioritization & roadmapping</li>
-                  <li>• Cross-functional team leadership</li>
+                  <li className="flex items-center gap-2">
+                    <Route className="h-4 w-4 text-primary" />
+                    End-to-end product lifecycle ownership
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Map className="h-4 w-4 text-primary" />
+                    User journey mapping & optimization
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Calendar className="h-4 w-4 text-primary" />
+                    Feature prioritization & roadmapping
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Users2 className="h-4 w-4 text-primary" />
+                    Cross-functional team leadership
+                  </li>
                 </ul>
               </CardContent>
             </Card>
@@ -269,10 +305,22 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li>• A/B testing & statistical analysis</li>
-                  <li>• Gamification & engagement strategies</li>
-                  <li>• Referral funnels & viral mechanics</li>
-                  <li>• Retention optimization</li>
+                  <li className="flex items-center gap-2">
+                    <TestTube className="h-4 w-4 text-primary" />
+                    A/B testing & statistical analysis
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Gamepad2 className="h-4 w-4 text-primary" />
+                    Gamification & engagement strategies
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Share2 className="h-4 w-4 text-primary" />
+                    Referral funnels & viral mechanics
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <TrendingDown className="h-4 w-4 text-primary" />
+                    Retention optimization
+                  </li>
                 </ul>
               </CardContent>
             </Card>
@@ -286,10 +334,30 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li>• Amplitude, Clevertap, Google Analytics</li>
-                  <li>• Cohort analysis & user segmentation</li>
-                  <li>• Funnel optimization</li>
-                  <li>• KPI definition & tracking</li>
+                  <li className="flex items-center gap-2">
+                    <BarChart3 className="h-4 w-4 text-primary" />
+                    Amplitude
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Activity className="h-4 w-4 text-primary" />
+                    Clevertap
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <PieChart className="h-4 w-4 text-primary" />
+                    Google Analytics
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Filter className="h-4 w-4 text-primary" />
+                    Cohort analysis & user segmentation
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Gauge className="h-4 w-4 text-primary" />
+                    Funnel optimization
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Database className="h-4 w-4 text-primary" />
+                    KPI definition & tracking
+                  </li>
                 </ul>
               </CardContent>
             </Card>
@@ -303,10 +371,22 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li>• Figma, Uizard prototyping</li>
-                  <li>• Design thinking workshops</li>
-                  <li>• Jira, Notion, Confluence management</li>
-                  <li>• Stakeholder communication</li>
+                  <li className="flex items-center gap-2">
+                    <Figma className="h-4 w-4 text-primary" />
+                    Figma, Uizard prototyping
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <PenTool className="h-4 w-4 text-primary" />
+                    Design thinking workshops
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <FileCheck className="h-4 w-4 text-primary" />
+                    Jira, Notion, Confluence management
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <MessageCircle className="h-4 w-4 text-primary" />
+                    Stakeholder communication
+                  </li>
                 </ul>
               </CardContent>
             </Card>
@@ -554,17 +634,6 @@ const Index = () => {
                         <span className="text-white font-bold text-sm">B</span>
                       </div>
                       <div className="flex-1 min-w-0">
-                        {/* Header row with name, handle, timestamp */}
-                        <div className="flex flex-wrap items-center gap-x-2 gap-y-1 mb-2">
-                          <span className="font-semibold text-gray-900 text-sm sm:text-base">
-                            Blinkit Engineering
-                          </span>
-                          <span className="text-gray-500 text-sm">
-                            @blinkiteng
-                          </span>
-                          <span className="text-gray-400 text-sm">• 2h</span>
-                        </div>
-
                         {/* Quote content */}
                         <p className="text-gray-800 text-sm sm:text-base leading-relaxed mb-3 break-words">
                           "Kirti Gupta has been instrumental in driving our user
@@ -573,7 +642,6 @@ const Index = () => {
                           improvements in our key metrics. 🚀 #ProductManagement
                           #UserEngagement"
                         </p>
-
                         {/* Stats */}
                         <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-gray-500 text-sm">
                           <span className="flex items-center gap-1">
@@ -669,15 +737,7 @@ const Index = () => {
                         <span className="text-white font-bold text-sm">GM</span>
                       </div>
                       <div className="flex-1 min-w-0">
-                        <div className="flex items-center space-x-2 mb-1">
-                          <span className="font-semibold text-gray-900">
-                            Gaurav Munjal
-                          </span>
-                          <span className="text-gray-500 text-sm">
-                            @gauravmunjal
-                          </span>
-                          <span className="text-gray-400 text-sm">• 1h</span>
-                        </div>
+                        {/* Quote content */}
                         <p className="text-gray-800 text-sm leading-relaxed mb-2">
                           "Over 70k Learners are now using Airlearn daily. Top Countries are US, UK and Germany. MAUs are almost 300k now.
                          🎯 #EdTech #ProductManagement"
@@ -777,17 +837,7 @@ const Index = () => {
                         <span className="text-white font-bold text-sm">GM</span>
                       </div>
                       <div className="flex-1 min-w-0">
-                        <div className="flex flex-wrap items-center gap-x-2 gap-y-1 mb-2">
-                          <span className="font-semibold text-gray-900 text-sm sm:text-base">
-                            Gagan Mahajan
-                          </span>
-                          <span className="text-gray-500 text-sm">
-                            @gaganmahajan
-                          </span>
-                          <span className="text-gray-400 text-sm">
-                            • Sep 20, 2020
-                          </span>
-                        </div>
+                        {/* Quote content */}
                         <p className="text-gray-800 text-sm leading-relaxed mb-2">
                           "Kirti learns at godspeed. Ever since she joined
                           Grofers, her own growth curve has been nothing short
@@ -891,17 +941,7 @@ const Index = () => {
                         <span className="text-white font-bold text-sm">AC</span>
                       </div>
                       <div className="flex-1 min-w-0">
-                        <div className="flex flex-wrap items-center gap-x-2 gap-y-1 mb-2">
-                          <span className="font-semibold text-gray-900 text-sm sm:text-base">
-                            Akshul Chauhan
-                          </span>
-                          <span className="text-gray-500 text-sm">
-                            @akshulchauhan
-                          </span>
-                          <span className="text-gray-400 text-sm">
-                            • Jun 18, 2019
-                          </span>
-                        </div>
+                        {/* Quote content */}
                         <p className="text-gray-800 text-sm leading-relaxed mb-2">
                           "Kirti understands the critical importance of
                           maintaining a strong product offering, as well as the
